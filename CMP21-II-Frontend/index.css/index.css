@@ -1,0 +1,138 @@
+/ * primeiras propriedades: * /
+* {
+    / * define uma área de margem nos quatro lados do elemento * /
+    margem :  0 ;
+    / * distância entre o conteúdo de um elemento e suas bordas * /
+    preenchimento :  0 ;
+    / * para configurar uma ou mais das propriedades de contorno * /
+    esboço :  0 ;
+}
+
+corpo {
+    / * Definindo a fonte de todo nosso corpo * /
+    família da fonte :  'Roboto' , sans-serif;
+    margem :  0 ;
+}
+
+li {
+    / * retirando as bolinhas das nossas listas * /
+    estilo de lista : nenhum;
+}
+
+/ * mostrar o flex-froggy
+https://flexboxfroggy.com/#pt-br * /
+
+.header-menu {
+    / * // Torna o elemento um flex container transforma automaticamente todos os seus filhos diretos em flex items. * /
+    display : flex;
+    posição : fixa; / * Deixa o nosso cabeçalho fixo * /
+    largura :  100 % ; / * Largura * /
+    preenchimento :  8 px ; / * Espaçamento dos 4 lados * /
+    padding-bottom :  32 px ; / * Espaçamento inferior * /
+    padding-top :  32 px ; / * Espaço superior * /
+    altura :  60 px ;
+    cor de fundo :  # 938DF8 ;
+}
+
+.header-menu  nav {
+    largura :  100 % ;
+    display : flex;
+    justify-content : flex-end;
+}
+
+.lista-menu {
+    display : flex; / * Colocando os itens na mesma linha * /
+    justify-content : espaço-uniformemente; / * Espaçamento entre eles seja igual * /
+    largura :  50 % ;
+    alinhar-itens : centro;
+}
+
+/ * Pegando os itens com tag a de dentro da nossa lista * /
+.lista-menu  li > a {
+    tamanho da fonte :  18 px ; / ** /
+    cor :  # FFF ; / ** /
+}
+
+.principal {
+    altura :  100 vh ; / ** /
+    display : flex; / ** /
+    cor de fundo :  # EAEAEA ; / ** /
+}
+
+/* O container é um componente do Bootstrap que garante que seu layout vai ficar alinhado corretamente na página. 
+Ele pode definir as margens laterais da página, ou deixar sem margens e, também, posiciona o conteúdo no 
+navegador centro do. O container é invisível.*/
+
+.container {
+    margem direita: automático; /* uma margem automática para todos os lados * /
+    margem esquerda : automático;/**/
+    largura máxima: 960 px ; /* largura máxima * /
+    padding-right :  10 px ; /* Espaço direito * /
+    padding-left :  10 px ; /* Espaçamento esquerdo */
+    largura :  100 % ; /* largura */
+}
+
+.subcontainer-principal {
+    display : flex; / ** /
+    direção flexível : coluna; / ** /
+    justificar-conteúdo : centro; / ** /
+    alinhar-itens : centro; / ** /
+    alinhamento de texto : centro; / ** /
+}
+
+.nome-completo {
+    tamanho da fonte :  36 px ; / ** /
+    cor :  # 938DF8 ; / ** /
+    peso da fonte :  700 ; / * espessura * /
+    altura :  45 px ; / ** /
+}
+
+.texto-sobre {
+    tamanho da fonte :  20 px ; / ** /
+    altura da linha :  32 px ; / * Espaçamento entre as linhas * /
+}
+
+.profissão {
+    cor :  # C5C0C0 ; / ** /
+    altura :  60 px ; / * altura * /
+}
+
+.topico-principal {
+    tamanho da fonte :  36 px ; / ** /
+    cor :  # 49BFB3 ; / ** /
+}
+
+.lista-item {
+    preenchimento :  32 px ; / * espaçamento dos 4 lados * /
+}
+
+.lista-item  ul  li {
+    margem inferior :  32 px ; / * espaçamento entre os itens da nossa lista * /
+}
+
+.lista-titulo {
+    margem inferior :  5 px ; / * espaçamento entre os itens da nossa lista * /
+    tamanho da fonte :  22 px ; / ** /
+    cor :  # 828282 ; / ** /
+    peso da fonte :  700 ; / ** /
+}
+
+.lista-local {
+    tamanho da fonte :  18 px ; / ** /
+    cor :  # 2F80ED ; / ** /
+}
+
+.lista-descricao {
+    tamanho da fonte :  18 px ; / ** /
+    margem superior :  5 px ; / ** /
+    altura da linha :  20 px ; / * Espaçamento entre as linhas * /
+    cor :  # 828282 ; / ** /
+    peso da fonte :  300 ; / ** /
+}
+
+.artigo-lista {
+    display : flex; / ** /
+    margem superior :  100 px ; / ** /
+    margem inferior :  100 px ; / ** /
+    direção flexível : coluna; / ** /
+}
